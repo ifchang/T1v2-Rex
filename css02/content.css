@@ -58,7 +58,7 @@ nav a {
   color: rgb(99, 99, 99);
   text-decoration: none;
   cursor: pointer;
-  line-height: 43px;
+  display: inline-block;
 }
 
 nav a:hover {
@@ -71,41 +71,44 @@ nav a + a {
 
 section {
   background-color: #fdfdfd;
+  padding: 40px 0 100px;
 }
 
 .full-box {
-  width: 1000px;
+  width: 850px;
   font-size: 0px;
   margin: 0px auto;
-  padding: 40px 0px 100px 0px;
 }
 
 .full-box-section {
   display: inline-block;
-  width: 370px;
+  max-width: 50%;
   font-size: 16px;
   vertical-align: top;
-  margin-left: 77px;
 }
 
 h2 {
   color: #3e3e3e;
   font-size: 65px;
   line-height: 70px;
-  margin: 0px;
   font-weight: normal;
 }
 
 h3 {  
   color: #3e3e3e;
-  font-size: 30px;
+  font-size: 35px;
   line-height: 43px;
   margin-bottom: 20px;
   font-weight: normal
 }
 
-.h3-p {
+.full-box-section-text {
   margin-bottom: 20px;
+}
+
+.button-box {
+  width: 280px;
+  margin: 0 auto;
 }
 
 button {
@@ -116,20 +119,17 @@ button {
   border-radius: 5px;
   border: 0;
   padding: 16px 67px;
-  margin: 0 auto 5px;
-  width: 280px;
+  margin-bottom: 5px;
 }
 
 .try-it-text {
   margin: 0 auto;
   font-size: 5px;
   color: #585858;
-  width: 280px;
 }
 
 .full-box-img-box {
-  display: inline-block;
-  margin-left: 100px;
+  float: right;
 }
 
 .full-box-img-box img {
@@ -154,9 +154,14 @@ article {
 }
 
 footer {
-  padding: 20px 160px 30px;
+  padding: 20px 0 30px;
   background-color: #eeeeee;
   border-top: 1px solid #dcdcdc;
+}
+
+.footer-content {
+  width: 880px;
+  margin: 0 auto;
 }
 
 footer span {
@@ -173,8 +178,11 @@ footer span {
   display: inline-block;
 }
 
-.footer-icon i {
+.footer-icon a + a {
   margin-left: 25px;
+}
+
+.footer-icon i {
   font-size: 25px;
   color: black;
   cursor: pointer;
