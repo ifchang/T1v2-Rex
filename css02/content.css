@@ -1,5 +1,5 @@
 * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
@@ -43,7 +43,6 @@ h1 a {
 
 h1 img {
   width: 85px;
-  cursor: pointer;
 }
 
 nav {
@@ -57,7 +56,6 @@ nav a {
   font-size: 17px;
   color: rgb(99, 99, 99);
   text-decoration: none;
-  cursor: pointer;
   display: inline-block;
 }
 
@@ -74,7 +72,7 @@ section {
   padding: 40px 0 100px;
 }
 
-.full-box {
+.activities {
   width: 850px;
   font-size: 0px;
   margin: 0px auto;
@@ -86,7 +84,7 @@ section {
   display: table;
 }
 
-.full-box-section {
+.activities-section {
   display: inline-block;
   max-width: 50%;
   font-size: 16px;
@@ -95,6 +93,7 @@ section {
 
 h2 {
   color: #3e3e3e;
+  text-transform: uppercase;
   font-size: 65px;
   line-height: 70px;
   font-weight: normal;
@@ -108,26 +107,21 @@ h3 {
   font-weight: normal
 }
 
-.full-box-section-text {
+.activities-section-text {
   margin-bottom: 20px;
 }
 
 .button-box {
-  width: 280px;
+  width: fit-content;
   margin: 0 auto;
 }
-
-.button-box a {
-  text-decoration: none;
-  cursor: pointer;
-}
-
 
 .button-box button:hover {
   color: rgb(255, 228, 77);
 }
 
 button {
+  text-transform: uppercase;
   font-size: 25px;
   color: white;
   display: block;
@@ -139,17 +133,17 @@ button {
   cursor: pointer;
 }
 
-.try-it-text {
+.under-button-text {
   font-size: 5px;
   color: #585858;
 }
 
-.full-box-img-box {
+.activities-imgbox {
   width: 50%;
   display: inline-block;
 }
 
-.full-box-img-box img {
+.activities-imgbox img {
   margin-left: auto;
   display: block;
 }
@@ -202,7 +196,7 @@ footer span {
 .footer-icon i {
   font-size: 25px;
   color: black;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .footer-icon i:hover {
