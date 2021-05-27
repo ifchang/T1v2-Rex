@@ -1,5 +1,5 @@
 * {
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
@@ -20,20 +20,21 @@ body {
   min-width: 1000px;
 }
 
-.header-background-color {
+header {
   background-color: #eeeeee;
+  padding: 20px 0 30px;
 }
 
 .container {
   width: 1000px;
   margin: 0 auto;
   font-size: 0;
+  padding-left: 10px;
 }
 
 h1 {
   display: inline-block;
   vertical-align: middle;
-  margin: 20px 0px 30px 10px;
 }
 
 h1 a {
@@ -46,7 +47,6 @@ h1 img {
 }
 
 nav {
-  width: fit-content;
   display: inline-block;
   vertical-align: middle;
   margin-left: 100px;
@@ -80,6 +80,12 @@ section {
   margin: 0px auto;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .full-box-section {
   display: inline-block;
   max-width: 50%;
@@ -111,6 +117,16 @@ h3 {
   margin: 0 auto;
 }
 
+.button-box a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.button-box button:hover {
+  color: rgb(255, 228, 77);
+}
+
 button {
   font-size: 25px;
   color: white;
@@ -120,20 +136,22 @@ button {
   border: 0;
   padding: 16px 67px;
   margin-bottom: 5px;
+  cursor: pointer;
 }
 
 .try-it-text {
-  margin: 0 auto;
   font-size: 5px;
   color: #585858;
 }
 
 .full-box-img-box {
-  float: right;
+  width: 50%;
+  display: inline-block;
 }
 
 .full-box-img-box img {
-  width: 100%;
+  margin-left: auto;
+  display: block;
 }
 
 article {
@@ -166,7 +184,6 @@ footer {
 
 footer span {
   font-size: 8px;
-  line-height: 25px;
 }
 
 .footer-icon {
@@ -190,8 +207,4 @@ footer span {
 
 .footer-icon i:hover {
   color: orange;
-}
-
-.after-box {
-  clear: both;
 }
